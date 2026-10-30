@@ -46,3 +46,14 @@
 - `git commit --amend "mensagem"` → "error: pathspec '...' did not match any file(s) known to git"
   - O que significava: esqueci o -m. Sem ele, o Git achou que a minha frase era o nome de um arquivo, procurou e não achou nenhum arquivo com esse nome.
   - Lição: a mensagem do commit sempre vai depois do -m.
+
+## VS Code
+
+- `code .`: abre o VS Code na pasta atual (sem o ponto, pode abrir em outra pasta)
+- Ctrl + S: salva o arquivo. Sem salvar, o Git não vê a mudança
+- Bolinha branca na aba: arquivo não salvo
+- `U` ao lado do arquivo: Untracked (arquivo novo que o Git ainda não acompanha)
+- Tab: empurra a linha pra direita (recuo)
+- Shift + Tab: puxa a linha pra esquerda
+- Alt + seta pra cima/baixo: move a linha inteira
+- Restricted Mode: só confiar em pastas que eu criei ou de alguém que conheço
