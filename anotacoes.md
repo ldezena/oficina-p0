@@ -20,6 +20,10 @@
 - git config: muda configuraçoes do git
 - git branch: mexe na linha do tempo (para renomear alguma coisa por exemplo) 
 - git commit --amend: corrigi o ultimo commit antes de mandar pro github
+- git remote add origin URL: conecta o PC ao GitHub (antes disso, o Git do PC não sabia que o repositório existia lá)
+- git remote -v: lista os endereços remotos conectados
+- git push -u origin main: envia os commits pro GitHub. O -u faz o Git lembrar pra onde mandar (só precisa na primeira vez)
+- git push: envia os commits, depois que o -u já foi usado
 
 ## Erros que já vi
 
@@ -38,3 +42,7 @@
 - `git . add` → "'.' is not a git command"
   - O que significava: a ordem estava errada. No Git, o verbo vem logo depois de `git`.
   - Lição: formato certo é `git VERBO em-quê` (ex: `git add .`).
+
+- `git commit --amend "mensagem"` → "error: pathspec '...' did not match any file(s) known to git"
+  - O que significava: esqueci o -m. Sem ele, o Git achou que a minha frase era o nome de um arquivo, procurou e não achou nenhum arquivo com esse nome.
+  - Lição: a mensagem do commit sempre vai depois do -m.
